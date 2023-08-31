@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Timer</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="life_timer" class="flex">
+            <div class="h1">
+                <h1 id="h1">Life Timer</h1>
+            </div>
+            <p id="p1">Know your Exact Age</p>
+            <h4 id="h4">Enter Your Date of Birth</h4>
+            <div class="date_input">
+                <input id="DOB" type="date">
+            </div>
+            <input id="submit_button" type="submit">
+            <p id="p2">Assume that you were born at 12:00 am</p>
+        </div>
+
+
+        <div class="parent_output_time">
+            <div class="you_are">
+                <span>The journey your have covered is </span>
+            </div>
+
+            <div class="output_time flex">
+
+                <div class="output_div" id="output_year">
+                    <div class="output_div_text">Year</div>
+                    <div class="year_count date_count">0000</div>
+                </div>
+
+
+                <div class="output_div" id="output_month">
+                    <div class="output_div_text">Month</div>
+                    <div class="month_count date_count">00</div>
+                </div>
+
+
+                <div class="output_div" id="output_day">
+                    <div class="output_div_text">Day</div>
+                    <div class="day_count date_count">00</div>
+                </div>
+
+
+                <div class="output_div" id="output_hour">
+                    <div class="output_div_text">Hour</div>
+                    <div class="hour_count date_count">00</div>
+                </div>
+
+
+                <div class="output_div" id="output_min">
+                    <div class="output_div_text">Minute</div>
+                    <div class="min_count date_count">00</div>
+                </div>
+
+                <div class="output_div" id="output_sec">
+                    <div class="output_div_text">Second</div>
+                    <div class="sec_count date_count">00</div>
+                </div>
+
+
+            </div>
+
+            <button type="button" id="go_back">
+                Go_back
+            </button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

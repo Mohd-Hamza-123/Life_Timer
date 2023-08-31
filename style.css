@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* utility classes */
+.flex {
+    display: flex;
+}
+
+#container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: url(spane.jpg) center center/cover;
+    /* background: black; */
+    justify-content: center;
+    position: relative;
+}
+
+#life_timer {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1 {
+    position: relative;
+
+}
+
+#h1 {
+    /* display: none; */
+    font-size: 90px;
+    margin-top: 50px;
+    z-index: 1000;
+    text-align: center;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    color: rgb(6, 4, 100);
+}
+
+#h1::before {
+    display: none;
+    content: "Life Timer";
+    position: absolute;
+    color: rgb(6, 4, 100);
+    z-index: 5;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    left: 0px;
+    top: -1px;
+    margin: 0 auto;
+}
+
+#p1 {
+    font-size: 29px;
+    text-align: center;
+}
+
+#p2 {
+    font-size: 18px;
+    text-align: center;
+    color: rgb(230, 223, 223);
+    margin-top: 10px;
+    /* font-weight: 600; */
+}
+
+#h4 {
+    font-size: 40px;
+    margin: 71px 0px 23px 0px;
+    letter-spacing: 2px;
+}
+
+#DOB {
+    cursor: pointer;
+    width: 100%;
+    font-size: 44px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+
+
+
+
+#submit_button {
+    width: 84px;
+    height: 36px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin: 25px auto 0 auto;
+}
+
+.parent_output_time {
+    position: absolute;
+    width: 97%;
+    height: 97%;
+    /* border: 2px solid rgb(255, 36, 189); */
+    top: 1.5%;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: .3s;
+}
+
+.you_are {
+    font-size: 40px;
+    color: white;
+}
+
+.output_time {
+    width: 90%;
+    height: 55%;
+    /* border: 2px solid red; */
+    /* position: absolute; */
+    bottom: 20%;
+    justify-content: space-between;
+    align-items: center;
+    left: 69px;
+}
+
+.output_div {
+    width: 16%;
+    height: 100%;
+    border: 2px solid #2feeff;
+    border-radius: 10px;
+
+}
+
+.output_div_text {
+    width: 100%;
+    height: 20%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+
+.date_count {
+    width: 100%;
+    height: 80%;
+    /* border:  solid greenyellow; */
+    border-top: 2px solid #2feeff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(1px);
+}
+
+#go_back {
+    font-size: 20px;
+    background: transparent;
+    padding: 3px;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    border: 2px solid #2feeff;
+
+}
+
+#go_back:hover {
+    /* color: rgb(19, 197, 241); */
+    border: 2px solid #ffffff;
+    background-color: rgb(2, 173, 216);
+    box-shadow: 2px 1px 20px rgb(2, 173, 216);
+}
